@@ -10,12 +10,15 @@ public class InventoryManager {
     public void addItem(InventoryItem item) {
         // TODO
         // Add hozzá (az ebben az osztályban lévő) inventory változóhoz a paraméterként kapott itemet!
+        this.inventory.add(item);
     }
 
     public void addItem(String name, int quantity, double price) {
         // TODO
         // Hívd meg az InventoryItem kosntruktorát a három paraméterrel és mentsd el egy item változóba!
+        InventoryItem item = new InventoryItem(name, quantity, price);
         // Add hozzá az inventoryhoz ezt az item-et!
+        this.inventory.add(item);
     }
 
     public void printItems() {
