@@ -52,10 +52,12 @@ public class InventoryManager {
 
     public double calculateTotalValue() {
         // TODO
-        return 0;
+        double sum = 0;
+        for (InventoryItem i : inventory) {
+            sum += i.calculateValue(i.getQuantity(), i.getPrice());
+        }
+        return sum;
     }
-
-
 
 
 }
