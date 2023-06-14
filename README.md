@@ -1,4 +1,4 @@
-# collections-framework
+# RPG Inventory
 
 Minden RPG-ben (Role-Playing Game) alap, hogy a játékosoknak van egy inventoryjuk 
 (magyarul: készlet, felszerelés), amiben tárolják a fegyvereiket,
