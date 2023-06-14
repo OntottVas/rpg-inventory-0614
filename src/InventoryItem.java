@@ -36,4 +36,8 @@ public class InventoryItem {
     public double calculateValue(int quantity, double price) {
         return quantity * price;
     }
+
+    public String toString() {
+        return "[name = " + this.name + ", quantity = " + this.quantity + ", price = " + this.price + "]";
+    }
 }

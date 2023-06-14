@@ -23,14 +23,31 @@ public class InventoryManager {
 
     public void printItems() {
         // TODO
+        for (InventoryItem i : inventory) {
+            System.out.println(i);
+        }
     }
 
     public void removeItem(String name) {
         // TODO
+        for (int i = 0; i < inventory.size(); i++) {
+            if (name.equals(inventory.get(i).getName())) {
+                inventory.remove(i);
+                break;
+            }
+        }
     }
 
     public void updateQuantity(String name, int newQuantity) {
         // TODO
+        int index = 0;
+        for (int i = 0; i < inventory.size(); i++) {
+            if (name.equals(inventory.get(i).getName())) {
+                index = i;
+                break;
+            }
+        }
+        inventory.get(index).setQuantity(newQuantity);
     }
 
     public double calculateTotalValue() {
