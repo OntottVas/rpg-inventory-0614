@@ -9,7 +9,7 @@ public class Main {
         inventoryManager.addItem("Soulreaper", 3, 666666);
 
         // Miután megírtad az InventoryItem kosntruktorát, futtatható lesz ez a kód is:
-        // inventoryManager.addItem(new InventoryItem("Shadowmantle Cloak", 1, 7000));
+        inventoryManager.addItem(new InventoryItem("Shadowmantle Cloak", 1, 7000));
 
         inventoryManager.printItems();
 
